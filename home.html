@@ -1,0 +1,23 @@
+{%extends "base.html"%}
+
+{%block title%}Student info Collector{%endblock%}
+
+{%block content%} 
+<h1>Enter your Detials </h1>
+<form  method = "POST" action="info">
+<label for="name"></label>
+<input type="text" name="name" placeholder="name"><br>
+
+<label for="roll_no"></label>
+<input type="text" name="roll_no" placeholder="roll_no"><br>
+
+<label for="collage"></label>
+<input type="text" name="collage" placeholder="collage"><br>
+
+<label for="branch"></label>
+<input type="text" name="branch" placeholder="branch"><br>
+
+<input type="submit" value="submit">
+
+</form>
+{%endblock%}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>{%block title%} Student recod{%endblock%}</title>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif; padding: 20px; margin: 0;}
+        header {background: rgb(6, 7, 7); padding: 30px; text-align: center; color: white;}
+        footer {background-color: #c1b6b6;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;}
+            nav {margin: 0 10px; color: white; text-decoration: none;}
+
+            content {padding: 10px;}
+    </style>
+</head>
+<body>
+    <header>
+        <h2> Student info Collector</h2>
+        <nav>
+            <a href="/">home</a>
+        </nav>
+    </header>
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+<footer>
+    <p>
+        &copy;@2025 RK SITE 
+    </p>
+</footer>
+</body>
+</html>
